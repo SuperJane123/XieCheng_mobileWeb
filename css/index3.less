@@ -1,0 +1,289 @@
+@import './bass.less';
+
+.view {
+    width: 540px;
+    margin: 5px auto;
+
+    /*携程导航部分开始*/
+    .cata {
+        display: flex;
+        margin: 5px 0;
+        height: 90px;
+        font-size: 14px;
+        border-radius: 8px;
+        background: #fa7f50;
+        color: #fff;
+        
+        
+        >a {
+            flex: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+           
+            >span {
+                width: 87px/2;
+                height: 67px/2;
+                background: url('../images/xc_sprites.png') no-repeat 0 -260px/2;
+                background-size: 208px/2 655px/2 ;
+            }
+        }
+        .xc_hotel,
+        .xc_ticket,
+        .xc_travl {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 2;
+            a {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-left: 1px solid #fff;
+                &:nth-child(-n+2) {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+    .ticket {
+        background: #3d98ff;
+        a {
+            span {
+                background-position: 0 -596px/2;
+            }
+        }
+    }
+    .travl {
+        background: #44c522;
+        a {
+            span {
+                background-position: 0 -480px/2;
+            }
+        }
+    }
+
+
+    /*功能部分开始*/
+
+    .function {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        display: flex;
+        font-size: 12px;
+        color: #222;
+        height: 110px;
+        flex-wrap: wrap;
+
+        a {
+
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span {
+                width: 25px;
+                height: 21px;
+                
+                background: url('../images/un_ico_subnav_v7.124@2x.png') no-repeat 0 0;
+                background-size: 48px/2 600px/2;
+            }
+            .safe {
+                background-position: 5px -25px;
+            }
+            .transfer {
+                background-position: 3px -108/2px;
+            }
+            .shopping {
+                background-position: 2px -552px/2;
+            }
+            .guide {
+                background-position: 3px -170/2px;
+            }
+            .free {
+                background-position: 5px -280/2px;
+            }
+            .happy {
+                background-position: 2px -340/2px;
+            }
+            .gift {
+                background-position: 1px -230/2px;
+            }
+            .credit {
+                background-position: 1px -400/2px;
+            }
+            .more {
+                background-position: 5px -500/2px;
+            }
+        }
+    }
+
+
+
+    /*特卖汇开始*/
+    .temaihui {
+        margin: 5px 0;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        /*特卖汇标题*/
+        .te_title{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+            h4 {
+                font-size: 16px;
+                font-style: italic;
+                color: #fd3c52;
+            }
+            a {
+                border-radius: 13px;
+                background: #ff6b7d;
+                padding: 2px 5px;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+        /*特卖汇内容*/
+        .te_content {
+            display: flex;
+            font-size: 14px;
+            .content_left {
+                flex: 1;
+                 a {
+                     display: block;
+                     &:nth-child(2) {
+                         height: 42px;
+                         overflow: hidden;
+                     }
+                    img {
+                        display: inline;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    color: #fe4f5e;
+                    >span {
+                        display: inline-block;
+                        padding: 0px 6px;
+                        font-size: 12px;
+                        border-radius: 14px;
+                        color: #fff;
+                        background: #fd3a51;
+                    }
+                }
+            }
+            .content_right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .red_picket {
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    flex: 1;
+                    background: url('../images/pic-tmh-02.png') no-repeat right bottom,#f9f9f9;
+                    background-size: 107px/2 142px/2;
+                    border-bottom: 5px solid #fff;
+                    h4 {
+                        color: #fd3a51;
+                    }
+                    >span {
+                        font-size: 12px;    
+                    }
+                }
+                .footer{
+                    flex: 1;
+                    display: flex;
+                    background: #f9f9f9;
+                    a {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-left: 5px solid #fff;
+                        &:nth-child(2) {
+                            h4 {
+                                color: #68d2bc
+                            }
+                        }
+                        h4 {
+                            color: #6aabff;
+                        }
+                        >span {
+                            font-size: 12px;
+                        }
+                        
+                        img {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ 
+
+
+    /*热门活动开始*/
+    
+    .act {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        .act_title {
+            display: flex;
+            justify-content: space-between;
+            h4 {
+                font-size: 16px;
+                font-style: italic;
+                color: orange;
+            }
+            a {
+                font-size: 12px;
+                border-radius: 10px;
+                background: #ff6b7d;
+                color: #fff;
+                padding: 3px 5px;
+                
+            }
+        }
+        .act_content {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                width: 50%;
+            }
+        }
+    }
+
+
+
+    /*尾部开始*/
+
+    footer {
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        .order {
+            display: flex;
+            a {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.view {
+  width: 540px;
+  margin: 5px auto;
+  /*头部导航开始*/
+  /*中间功能部分开始*/
+  /*特卖汇开始*/
+  /*热门活动开始*/
+  /*尾部内容开始*/
+}
+.view .nav .cata {
+  display: flex;
+  margin: 5px 0;
+  border-radius: 5px;
+  height: 90px;
+  color: #fff;
+  font-size: 14px;
+  background: #fa7f50;
+}
+.view .nav .cata > a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.view .nav .cata > a span:nth-child(2) {
+  width: 39px;
+  height: 33px;
+  background: url('../images/xc_sprites.png') no-repeat 0 -130px;
+  background-size: 104px 327.5px;
+}
+.view .nav .cata .xc_hotel,
+.view .nav .cata .xc_ticket,
+.view .nav .cata .xc_travl {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.view .nav .cata .xc_hotel > a,
+.view .nav .cata .xc_ticket > a,
+.view .nav .cata .xc_travl > a {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #ccc;
+}
+.view .nav .cata .xc_hotel > a:nth-child(-n+2),
+.view .nav .cata .xc_ticket > a:nth-child(-n+2),
+.view .nav .cata .xc_travl > a:nth-child(-n+2) {
+  border-bottom: 1px solid #fff;
+}
+.view .nav .ticket {
+  background: #3d98ff;
+}
+.view .nav .ticket a span:nth-child(2) {
+  background-position: -3px -295px;
+}
+.view .nav .travl {
+  background: #44c522;
+}
+.view .nav .travl a span:nth-child(2) {
+  background-position: 0 -240px;
+}
+.view .function {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 110px;
+  font-size: 12px;
+  color: #222;
+}
+.view .function a {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.view .function a span:nth-child(1) {
+  width: 24px;
+  height: 24px;
+  background: url('../images/un_ico_subnav_v7.124@2x.png') no-repeat 0 0;
+  background-size: 24px 300px;
+}
+.view .function a .safe {
+  background-position: 3px -25px !important;
+}
+.view .function a .transfer {
+  background-position: 0px -55px !important;
+}
+.view .function a .shopping {
+  background-position: right bottom !important;
+}
+.view .function a .guide {
+  background-position: 0px -85px !important;
+}
+.view .function a .free {
+  background-position: 0px -140px !important;
+}
+.view .function a .happy {
+  background-position: 0px -170px !important;
+}
+.view .function a .gift {
+  background-position: 0px -115px !important;
+}
+.view .function a .credit {
+  background-position: 0px -200px !important;
+}
+.view .function a .more {
+  background-position: 3px -250px !important;
+}
+.view .temaihui {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /*特卖汇标题*/
+  /*特卖汇内容*/
+}
+.view .temaihui .te_title {
+  display: flex;
+  justify-content: space-between;
+}
+.view .temaihui .te_title h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-style: italic;
+  color: #fd3c52;
+}
+.view .temaihui .te_title > a {
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 10px;
+  background: #ff7090;
+  color: #fff;
+}
+.view .temaihui .te_content {
+  display: flex;
+  font-size: 14px;
+}
+.view .temaihui .te_content .content_left {
+  flex: 1;
+}
+.view .temaihui .te_content .content_left > a:nth-child(2) {
+  display: block;
+  height: 42px;
+  overflow: hidden;
+}
+.view .temaihui .te_content .content_left p {
+  font-size: 16px;
+  color: #fe4f5e;
+}
+.view .temaihui .te_content .content_left p > span {
+  display: inline-block;
+  padding: 0 5px;
+  background: #fd3a51;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.view .temaihui .te_content .content_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.view .temaihui .te_content .content_right .right_top {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: 5px solid #fff;
+  background: url('../images/pic-tmh-02.png') no-repeat right bottom, #f9f9f9;
+  background-size: 53.5px 71px;
+}
+.view .temaihui .te_content .content_right .right_top > a {
+  font-weight: 600;
+  color: #fd3a51;
+}
+.view .temaihui .te_content .content_right .right_foot {
+  display: flex;
+  flex: 1;
+  background: #f9f9f9;
+}
+.view .temaihui .te_content .content_right .right_foot > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-left: 5px solid #fff;
+}
+.view .temaihui .te_content .content_right .right_foot > a:nth-child(2) span:first-child {
+  font-weight: 600;
+  color: #68d2bc;
+}
+.view .temaihui .te_content .content_right .right_foot > a span:first-child {
+  font-weight: 600;
+  color: #6aabff;
+}
+.view .temaihui .te_content .content_right .right_foot > a span:nth-child(2) {
+  font-size: 12px;
+}
+.view .temaihui .te_content .content_right .right_foot > a img {
+  width: 49.5px;
+  height: 35px;
+}
+.view .hot_act {
+  margin-top: 5px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /*热门活动标题开始*/
+  /*热门活动内容开始*/
+}
+.view .hot_act .hot_title {
+  display: flex;
+  justify-content: space-between;
+}
+.view .hot_act .hot_title h4 {
+  font-size: 16px;
+  font-style: italic;
+  color: orange;
+}
+.view .hot_act .hot_title > a {
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 10px;
+  background: #ff7090;
+  color: #fff;
+}
+.view .hot_act .hot_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.view .hot_act .hot_content a {
+  width: 50%;
+}
+.view footer {
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.view footer .order {
+  display: flex;
+}
+.view footer .order a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

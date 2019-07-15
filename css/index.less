@@ -1,0 +1,305 @@
+@import './bass.less';
+
+
+
+.view {
+    width: 540px;
+    margin: 10px auto;
+
+		// 头部开始
+    section {
+        .cata {
+            display: flex;
+            margin: 5px 0;
+            height: 90px;
+            font-size: 14px;
+            border-radius: 5px;
+            background: #fa7f50;
+            color: #fff;
+            >a{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                // background: pink;
+                span {
+                    &:nth-child(2) {
+                        width: 43px;
+                        height: 43px;
+                        background: url('../images/xc_sprites.png') no-repeat 0 -260px/2;
+                        background-size: 208px/2 655px/2;
+                    }
+                }
+                
+            }
+            .xc_hotel,
+            .xc_ticket,
+            .xc_travel {
+                flex: 2;
+                display: flex;
+                flex-wrap: wrap;
+                // background: skyblue;
+                a {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-left: 1px solid #fff;
+                    &:nth-child(-n+2) {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+
+            }
+        }
+        .ticket {
+            background: #3d98ff;
+
+            >a {
+                span {
+                    &:nth-child(2) {
+                        background-position: 0 -593px/2;
+                    }
+                }
+            }
+        }
+        .travel {
+            background: #44c522;
+            >a {
+                span {
+                     &:nth-child(2) {
+                    background-position: 0 -480px/2;
+                }
+            }
+           
+            }
+        }
+    }
+
+
+    // 功能部分开始
+    .function {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 0;
+        height: 110px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 12px;
+        color: #222;
+        >a {
+            width: 20%;
+            // background: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            >span {
+                width: 48px/2;
+                height: 43px/2;
+                background: red;
+                background: url('../images/un_ico_subnav_v7.124@2x.png') no-repeat 0 0;
+                background-size: 48px/2 600px/2;
+            }
+            em {
+                width: 64px;
+                display: flex;
+                justify-content: center;
+            }
+            .safe {
+                background-position: 3px -50px/2;
+            }
+            .transfer {
+                 background-position: 3px -110px/2;
+            }
+            .shopp {
+                background-position: 1px -552px/2;
+            }
+            .guide {
+                background-position: 0px -170px/2;
+            }
+            .free {
+                background-position: 3px -280px/2;
+            }
+            .happy {
+                background-position: 0px -338px/2;
+            }
+            .gift {
+                 background-position: 0 -230px/2;
+            }
+            .credi {
+                background-position: 0 -400px/2;
+            }
+            .more {
+                background-position: 4px -500px/2;
+            }   
+
+        }
+    }
+
+    // 特卖汇部分开始
+
+
+    .temaihui {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        .te_title {
+            display: flex;
+            padding-bottom: 5px;
+            justify-content: space-between;
+            h4 {
+                font-style: italic;
+               color: #fd3c52;
+            }
+            a {
+                padding: 2px 5px;
+                font-size: 12px;
+                border-radius: 10px;
+                background: #ff81ca;
+                color: #fff;
+            }
+        }
+        .te_content {
+            display: flex;
+            font-size: 14px;
+            .content_left {
+                flex: 1;
+                a {
+                    &:nth-child(2) {
+                    display: block;
+                    height: 42px;
+                    overflow: hidden;
+                    }
+                }
+                span {
+									font-size: 16px;
+                   color: #fe4f5e;
+                    &:last-child {
+                        font-size: 12px;
+                        padding: 1px 5px;
+                        border-radius: 10px;
+                        background: #fd3a51;
+                        color: #fff;
+                    }
+                }
+
+            }
+            .content_right {
+                flex: 1;
+                font-size: 12px;
+                .content_top{
+                    height: 50%;
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    border-bottom: 5px solid #fff;
+                    background: url('../images/pic-tmh-02.png') no-repeat right bottom,#f9f9f9;
+                    background-size: 107px/2 142px/2;
+                    a {
+                        color: #fd3a51;
+                         font-weight: 600;
+												 font-size: 14px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .content_foot{
+                    height: 50%;
+                    display: flex;
+										font-size: 14px;
+                         a {
+                             flex: 1;
+                             background: #f9f9f9;
+                             border-left: 5px solid #fff;
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: center;
+                             align-items: center;
+														 &:nth-child(2) {
+															 h4 {
+
+																 color: #68d2bc;
+															 }
+														 }
+                             h4 {
+                                 color: #6aabff;
+                             }
+                        img {
+                            width: 40%;
+                        }
+												span {
+													font-size: 12px;
+												}
+                    }
+                }
+            }
+        }
+    }
+
+		
+
+
+// 热门活动开始
+
+    .hot_act {
+        margin: 5px 0;
+       height: 457px;
+       border: 1px solid #ddd;
+       border-radius: 5px;
+       padding: 10px 10px;
+        .hot_title {
+            display: flex;
+            justify-content: space-between;
+            i {
+                font-size: 16px;
+                font-weight: 600;
+                color: #ffa500;
+            }
+            >a {
+                width: 98px;
+                height: 21px;
+                border-radius: 10px;
+                line-height: 21px;
+                text-align: center;
+                font-size: 12px;
+                color: #fff;
+                background: #ff81ca;
+            }
+        }
+        .hot_content {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    // 尾部开始
+
+    footer {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        .order {
+            display: flex;
+            font-size: 16px;
+            
+            a {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        }
+    }
+}
+
